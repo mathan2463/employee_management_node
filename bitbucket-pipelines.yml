@@ -1,0 +1,6 @@
+pipelines:
+  default:
+    - step:
+        name: Update Build
+        script:
+          - ssh ubuntu@ec2-65-1-73-181.ap-south-1.compute.amazonaws.com /home/ubuntu/projects/ahoms/api/oms-api/upgrade.sh
